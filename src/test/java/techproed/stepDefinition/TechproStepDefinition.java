@@ -60,4 +60,14 @@ public class TechproStepDefinition {
     public void sayfaBasligininMobileIcerdiginiTestEder() {
         Assert.assertTrue(Driver.getDriver().getTitle().contains("Mobile"));
     }
+
+    @Given("kullanici {string} sayfasina gider")
+    public void kullaniciSayfasinaGider(String url) {   // File feature'dan gelen https://trchpro.com gelmis olacak.
+        Driver.getDriver().get(url);
+    }
+
+    @Then("arama kutusunda {string} aratir")
+    public void aramaKutusundaAratir(String arananUrun) {
+        techproPageage.searchBox.sendKeys(arananUrun);   // feature File'dan ne gelirse onu aratacak
+    }
 }
