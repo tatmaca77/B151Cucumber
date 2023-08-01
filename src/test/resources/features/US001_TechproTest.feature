@@ -7,3 +7,8 @@ Feature: US001 TechProEducation Sayfasi Testi
 # Feature file da daha önce olusturdugumuz bir method'u baska Scenario'larda tekrar olusturmadan kullanabiliriz.
 # Yukaridaki örnekte oldugu gibi sayfayi kapatir step'i icin daha önce amazonstepdefinition class'inda olusturdugumuz
   # methodu kullanabiliriz.
+  Scenario: TC02 Sayfada Arama Yapar
+    Given kullanici techpro sayfasina gider
+    Then arama kutusunda java aratir
+    And sayfa basliginin java icerdigini test eder
+    And sayfayi kapatir

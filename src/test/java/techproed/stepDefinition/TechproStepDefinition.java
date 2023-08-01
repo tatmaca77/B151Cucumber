@@ -30,4 +30,14 @@ public class TechproStepDefinition {
 
     }
 
+    @Then("arama kutusunda java aratir")
+    public void aramaKutusundaJavaAratir() {
+        TechproPage techproPageage = new TechproPage();
+        techproPageage.searchBox.sendKeys("java", Keys.ENTER);
+    }
+
+    @And("sayfa basliginin java icerdigini test eder")
+    public void sayfaBasligininJavaIcerdiginiTestEder() {
+        Assert.assertFalse(Driver.getDriver().getTitle().contains("java"));
+    }
 }
