@@ -11,7 +11,7 @@ sayesinde çalıştırabiliriz. Ve plugin parametresi ile raporlar alabiliriz
 @RunWith(Cucumber.class)//-->Test çalıştırıcı Notasyon
 @CucumberOptions(features = "src/test/resources/features",
         glue = {"techproed/stepDefinition"},
-        tags = "@techpro or @iphone",
+        tags = "@tech",    // Burda SQL'deki gibi and or ayrimini biliyoruz. and dersen olmaz or olur.
         dryRun = false //-->true seçersek scenarioları kontrol eder browser'ı çalıştırmaz
 )
 
