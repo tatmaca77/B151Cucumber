@@ -13,6 +13,7 @@ Feature: US001 TechProEducation Sayfasi Testi
     And sayfa basliginin java icerdigini test eder
     And sayfayi kapatir
 
+    @techpro
     Scenario: TC03 Sayfada Arama Yapar
       Given kullanici techpro sayfasina gider
       Then arama kutusunda mobile aratir

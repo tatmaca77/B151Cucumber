@@ -5,25 +5,23 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 /**
-  Runner class'i TestNG'deki .Xml File kullanimindaki gibi istedigimiz scenario'lari kullanacagimiz tag parametresi
-  sayesinde calistirabiliriz. Ve plugin parametresi ile raporlar alabiliriz.
+Runner class'ı testNG deki .xml file kullanımındaki gibi istediğimiz scenario lari kullanacağımız tag parametresi
+sayesinde çalıştırabiliriz. Ve plugin parametresi ile raporlar alabiliriz
  */
-@RunWith(Cucumber.class) // --> Test calistirici Annotation
-@CucumberOptions()
-
-
-
-
-
-
-
-
+@RunWith(Cucumber.class)//-->Test çalıştırıcı Notasyon
+@CucumberOptions(features = "src/test/resources/features",
+        glue = {"techproed/stepDefinition"},
+        tags = "@techpro",
+        dryRun = false //-->true seçersek scenarioları kontrol eder browser'ı çalıştırmaz
+)
 
 public class Runner {
 }
 /**
-   @CucumberOptions() notasyonuna parametre olarak
-           features--> packega'in yolunu
-           glue--> stepdefinition package
-           tag--> calistirmak istedigimiz scenario'lari burda belirtiriz.
+@CucumberOptions() notasyonuna parametre olarak
+            features--> packege'ın yolunu  // Yolunu alirken Content Root
+            glue-->stepdefinition package   // Yolunu alirken Source Root
+            tag-->çalıştırmak istediğimiz scenariolari burda belirtiriz. O senaryonun üzerine @techpro yazariz.
+    Scenarioların nerede ve nasıl çalışacağı, hangi raporu kullanacağı ile alakalı seçanekleri bu notasyonda
+belirtiriz
  */
