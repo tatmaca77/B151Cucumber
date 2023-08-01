@@ -30,9 +30,4 @@ public class TechproStepDefinition {
 
     }
 
-    @Then("sayfayi kapatir")
-    public void sayfayi_kapatir() {
-        Driver.closeDriver();
-
-    }
 }
