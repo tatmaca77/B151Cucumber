@@ -12,3 +12,10 @@ Feature: US001 TechProEducation Sayfasi Testi
     Then arama kutusunda java aratir
     And sayfa basliginin java icerdigini test eder
     And sayfayi kapatir
+
+    Scenario: TC03 Sayfada Arama Yapar
+      Given kullanici techpro sayfasina gider
+      Then arama kutusunda mobile aratir
+      When cikan dropdown da mobile developer linkine tiklar
+      And sayfa basliginin Mobile icerdigini test eder
+      And sayfayi kapatir

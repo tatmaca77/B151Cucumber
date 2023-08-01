@@ -15,4 +15,9 @@ public class TechproPage {
     @FindBy(xpath = "//*[@id='searchHeaderInput']")
     public WebElement searchBox;
 
+    @FindBy(xpath = "//span[text()='Mobile Developer']")
+    public WebElement mobileLink;
+
+
+
 }
