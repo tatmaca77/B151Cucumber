@@ -11,7 +11,7 @@ sayesinde çalıştırabiliriz. Ve plugin parametresi ile raporlar alabiliriz
 @RunWith(Cucumber.class)//-->Test çalıştırıcı Notasyon
 @CucumberOptions(features = "src/test/resources/features",
         glue = {"techproed/stepDefinition"},
-        tags = "@techpro",
+        tags = "@techpro or @iphone",
         dryRun = false //-->true seçersek scenarioları kontrol eder browser'ı çalıştırmaz
 )
 
