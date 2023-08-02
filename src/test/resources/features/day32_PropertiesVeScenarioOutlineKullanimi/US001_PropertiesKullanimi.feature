@@ -8,12 +8,12 @@ Feature: US001 Google Sayfasi Testi
     * kullanici 3 saniye bekler
     * google sayfasinda basligin "volvo" icerdigini test eder
 
-  Scenario: Arama kutusunda ford aratir
+  Scenario: TC02 Arama kutusunda ford aratir
     Then kullanici google arama kutusunda "ford" aratir
     But kullanici 1 saniye bekler
     And google sayfasinda basligin "ford" icerdigini test eder
 
-  Scenario: Arama kutusunda audi aratir
+  Scenario: TC03 Arama kutusunda audi aratir
     Then kullanici google arama kutusunda "audi" aratir
     But kullanici 2 saniye bekler
     And google sayfasinda basligin "audi" icerdigini test eder
