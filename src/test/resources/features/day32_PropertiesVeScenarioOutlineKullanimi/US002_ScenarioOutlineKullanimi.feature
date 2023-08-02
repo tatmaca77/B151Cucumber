@@ -1,4 +1,4 @@
-Feature: US001 Google Sayfasi Testi
+Feature: US002 Google Sayfasi Testi
 
   Scenario Outline: TC01 Arama kutusunda ford aratir
     Given kullanici "googleUrl" sayfasina gitti

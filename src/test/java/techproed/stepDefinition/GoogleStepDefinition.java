@@ -43,8 +43,12 @@ public class GoogleStepDefinition {
     }
 
 
+    @Then("kullanici google arama kutusunda {string} aratti")
+    public void kullaniciGoogleAramaKutusundaAratti(String araclar) {
+        googlePage.aramaKutusu.sendKeys(ConfigReader.getProperty(araclar));
+    }
 
-
-
-
+    @And("google sayfasinda basligin {string} icerdigini test etti")
+    public void googleSayfasindaBasliginIcerdiginiTestEtti(String basliklar) {
+    }
 }
