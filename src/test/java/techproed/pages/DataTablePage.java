@@ -18,10 +18,13 @@ public class DataTablePage {
     @FindBy(xpath = "DTE_Field_first_name")
     public WebElement firstName;
 
+    @FindBy(xpath = "//button[text()='Create']")
+    public WebElement createButton;
 
+    @FindBy(xpath = "//input[@type='search']")
+    public WebElement searchBox;
 
-
-
-
+    @FindBy(xpath = "//tbody//tr[1]//td[2]")
+    public WebElement verify;
 
 }
