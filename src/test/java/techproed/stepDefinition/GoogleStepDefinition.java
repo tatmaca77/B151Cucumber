@@ -1,6 +1,7 @@
 package techproed.stepDefinition;
 
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.But;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
@@ -17,6 +18,9 @@ public class GoogleStepDefinition {
     @Given("kullanici {string} sayfasina gitti")
     public void kullaniciSayfasinaGitti(String url) {
         Driver.getDriver().get(ConfigReader.getProperty(url));
+        googlePage.cerez.click();
+        //ReusableMethods.bekle(2);
+        // Bu sekilde bakan kisiler kod okurken anlamayabilir. Bu yüzden feature file'a ekleriz ve method olusuturuz.
     }
 
     @Then("kullanici google arama kutusunda {string} aratir")
@@ -29,9 +33,18 @@ public class GoogleStepDefinition {
         Assert.assertTrue(Driver.getDriver().getTitle().contains(baslik));
     }
 
-    @Then("kullanici cikan cerezi kabul eder")
-    public void kullaniciCikanCereziKabulEder() {
-        ReusableMethods.bekle(2);
-        googlePage.cerez.click();
+    @But("kullanici {int} saniye bekler")
+    public void kullaniciSaniyeBekler(int sayi) {
+        try {
+            Thread.sleep(sayi*1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
+
+
+
+
+
+
 }
