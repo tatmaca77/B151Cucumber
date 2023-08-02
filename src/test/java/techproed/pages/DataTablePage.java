@@ -15,7 +15,7 @@ public class DataTablePage {
     @FindBy(xpath = "//span[text()='New']")
     public WebElement newButton;
 
-    @FindBy(xpath = "DTE_Field_first_name")
+    @FindBy(xpath = "(//div[@data-dte-e='input-control']//input)[1]")
     public WebElement firstName;
 
     @FindBy(xpath = "//button[text()='Create']")
