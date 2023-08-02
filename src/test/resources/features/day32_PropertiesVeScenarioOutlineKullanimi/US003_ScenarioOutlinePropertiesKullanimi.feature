@@ -11,3 +11,7 @@ Feature: US003 Google Sayfasi Testi
       | arac2        |
       | arac3        |
       | arac4        |
+
+   #Eger Scenario Outline ile verileri .properties dosyasindan almak istersek Examples altindaki verileri
+  #.properties dosyasinda olusturdugumuz key'leri yazariz. Step definition'da olusturdugumuz parametreli method ile de
+  # ConfigReader sayesinde bu keylerin degerini kullanmis oluruz.
