@@ -8,6 +8,7 @@ import org.openqa.selenium.Keys;
 import techproed.pages.GooglePage;
 import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
+import techproed.utilities.ReusableMethods;
 
 public class GoogleStepDefinition {
 
@@ -30,6 +31,7 @@ public class GoogleStepDefinition {
 
     @Then("kullanici cikan cerezi kabul eder")
     public void kullaniciCikanCereziKabulEder() {
+        ReusableMethods.bekle(2);
         googlePage.cerez.click();
     }
 }
