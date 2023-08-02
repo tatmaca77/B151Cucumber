@@ -50,6 +50,6 @@ public class GoogleStepDefinition {
 
     @And("google sayfasinda basligin {string} icerdigini test etti")
     public void googleSayfasindaBasliginIcerdiginiTestEtti(String basliklar) {
-        Assert.assertTrue(Driver.getDriver().getTitle().contains(basliklar));
+        Assert.assertTrue(Driver.getDriver().getTitle().contains(ConfigReader.getProperty(basliklar)));
     }
 }
