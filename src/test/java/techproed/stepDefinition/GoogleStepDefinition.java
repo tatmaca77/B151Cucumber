@@ -59,6 +59,11 @@ public class GoogleStepDefinition {
         System.out.println(data.asList());
         for (int i = 1; i < data.asList().size() ; i++) {
             googlePage.aramaKutusu.sendKeys(data.asList().get(i),Keys.ENTER);
+            ReusableMethods.bekle(2);
+            Assert.assertTrue(Driver.getDriver().getTitle().contains(data.asList().get(i)));
+            ReusableMethods.bekle(2);
+            googlePage.aramaKutusu.clear();
+
 
         }
     }
