@@ -9,6 +9,8 @@ import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
 import techproed.utilities.ReusableMethods;
 
+import java.util.Map;
+
 public class BlueRentalStepDefinition {
     BlueRentalPage blueRentalPage = new BlueRentalPage();
 
@@ -27,6 +29,17 @@ public class BlueRentalStepDefinition {
         blueRentalPage.emailBox.sendKeys(data.row(2).get(0), Keys.TAB,data.row(2).get(1),Keys.ENTER);
         ReusableMethods.bekle(2);
 
+
+    }
+
+    @And("kullanici verilen bilgiler ile login olur")
+    public void kullaniciVerilenBilgilerIleLoginOlur(DataTable data) {
+        for (Map<String, String> w : data.asMaps()) {
+            blueRentalPage.emailBox.sendKeys(w.get("email"),Keys.TAB,w.get("password"),Keys.ENTER);
+            ReusableMethods.bekle(2);
+            Driver.getDriver().navigate().back();
+            ReusableMethods.bekle(2);
+        }
 
     }
 }
