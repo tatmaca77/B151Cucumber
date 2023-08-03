@@ -21,7 +21,7 @@ Feature: US004 DataTables Testi
     And kullanici 2 saniye bekler
     And sayfayi kapatir
     Examples:
-      | firstname | lastname | position | office | extension | date | salary |
+      | firstname | lastname | position    | office  | extension | date       | salary  |
       | john      | smith    | tester      | NYC     | 2134      | 2023-02-25 | 80000   |
       | sam       | walton   | businessman | LA      | 5262      | 2021-02-21 | 2000000 |
       | nancy     | brown    | developer   | Dallas  | 2346      | 2021-02-26 | 850000  |
