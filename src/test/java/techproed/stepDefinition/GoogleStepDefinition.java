@@ -19,7 +19,7 @@ public class GoogleStepDefinition {
     @Given("kullanici {string} sayfasina gitti")
     public void kullaniciSayfasinaGitti(String url) {
         Driver.getDriver().get(ConfigReader.getProperty(url));
-        googlePage.cerez.click();
+        //googlePage.cerez.click();   --> if ile yapmaya calis
         //ReusableMethods.bekle(2);
         // Bu sekilde bakan kisiler kod okurken anlamayabilir. Bu yüzden feature file'a ekleriz ve method olusuturuz.
     }
