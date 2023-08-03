@@ -28,3 +28,6 @@ Feature: US003 TechProEducation Sayfasi Testi
     # Featurelarin istedigimiz siraya gore veya alfabetik olarak calismasini istiyorsak file larin basina a b c vs gibi koyabiliriz
   #Scenario'larimizin tek bir browser da calismasini istersek ve tüm scenario'lardan sonra browser'i kapatmak istersek
   #en son scenario'da close yapabiliriz.
+
+
+  #Github - Settings -Applications - Authorized OAurh Apps - Cucumber Reports  --> GitHubda raporu görünütlemek icin adimlar.

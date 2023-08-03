@@ -8,8 +8,8 @@ import org.junit.runner.RunWith;
 Runner class'ı testNG deki .xml file kullanımındaki gibi istediğimiz scenario lari kullanacağımız tag parametresi
 sayesinde çalıştırabiliriz. Ve plugin parametresi ile raporlar alabiliriz
  */
-@RunWith(Cucumber.class)//-->Test çalıştırıcı Notasyon // pretty kullaniminda konsolda detayli olarak tüm adimlari rapor halinde görürüz.
-@CucumberOptions(plugin = {"pretty",
+@RunWith(Cucumber.class)//-->Test çalıştırıcı Notasyon
+@CucumberOptions(plugin = {"pretty",  // pretty kullaniminda konsolda detayli olarak tüm adimlari rapor halinde görürüz.
                            "html:target/default-cucumber-reports.html",
                            "json:target/json-reports/cucumber.json", // bu 3 cesit rapor verir. json junit dev icin ilki tester icin. Target altinda raporlar.
                            "junit:target/xml-report/cucumber.xml"},
