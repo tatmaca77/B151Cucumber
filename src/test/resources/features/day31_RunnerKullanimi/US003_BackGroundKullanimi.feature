@@ -30,4 +30,4 @@ Feature: US003 TechProEducation Sayfasi Testi
   #en son scenario'da close yapabiliriz.
 
 
-  #Github - Settings -Applications - Authorized OAurh Apps - Cucumber Reports  --> GitHubda raporu görünütlemek icin adimlar.
+  #Github - Settings -Applications - Authorized OAuth Apps - Cucumber Reports  --> GitHubda raporu görünütlemek icin adimlar.
