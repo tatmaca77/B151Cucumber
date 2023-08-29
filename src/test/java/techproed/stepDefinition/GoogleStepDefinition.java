@@ -29,6 +29,14 @@ public class GoogleStepDefinition {
         googlePage.aramaKutusu.sendKeys(arac, Keys.ENTER);
     }
 
+
+    @Then("kullanici google arama kutusunda {string} aratir")
+    public void kullaniciGoogleAramaKutusundaAratir2(String arac) {
+        googlePage.aramaKutusu.sendKeys(ConfigReader.getProperty(arac), Keys.ENTER);
+    }
+
+
+
     @And("google sayfasinda basligin {string} icerdigini test eder")
     public void googleSayfasindaBasliginIcerdiginiTestEder(String baslik) {
         Assert.assertTrue(Driver.getDriver().getTitle().contains(baslik));
