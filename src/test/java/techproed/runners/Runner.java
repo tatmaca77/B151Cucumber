@@ -16,7 +16,7 @@ sayesinde çalıştırabiliriz. Ve plugin parametresi ile raporlar alabiliriz
         features = "src/test/resources/features", // Features altindaki klasörlere ulasmasi icin Content Root ile yolu alinir.
         glue = {"techproed/stepDefinition"},
         tags = "@tech",    // Burda SQL'deki gibi and or ayrimini biliyoruz. and dersen olmaz or olur.
-        dryRun = false, //-->true seçersek scenarioları kontrol eder browser'ı çalıştırmaz
+        dryRun = false, // --> true seçersek scenarioları kontrol eder, browser'ı çalıştırmaz
         monochrome = false   // tek renk olarak konsolda gösterir. Kullanimi zorunlu degildir. False yaparsan renkli olur.
 )
     /** Asil amac; istedigim senaryolari belirttigim tag'lar ile calistirmaktir. */
