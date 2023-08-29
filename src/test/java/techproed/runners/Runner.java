@@ -14,8 +14,8 @@ sayesinde çalıştırabiliriz. Ve plugin parametresi ile raporlar alabiliriz
                            "json:target/json-reports/cucumber.json", // bu 3 cesit rapor verir. json junit dev icin ilki tester icin. Target altinda raporlar.
                            "junit:target/xml-report/cucumber.xml"},
         features = "src/test/resources/features", // Features altindaki klasörlere ulasmasi icin Content Root ile yolu alinir.
-        glue = {"techproed/stepDefinition"},
-        tags = "@tech or @techpro",    // Burda SQL'deki gibi and or ayrimini biliyoruz. and dersen olmaz or olur.
+        glue = {"techproed/stepDefinition","techproed/hooks"},
+        tags = "@volvo",    // Burda SQL'deki gibi and or ayrimini biliyoruz. and dersen olmaz or olur.
         dryRun = false, // --> true seçersek scenarioları kontrol eder, browser'ı çalıştırmaz
         monochrome = false   // tek renk olarak konsolda gösterir. Kullanimi zorunlu degildir. False yaparsan renkli olur.
 )
@@ -29,4 +29,11 @@ public class Runner {
             tag-->çalıştırmak istediğimiz scenariolari burda belirtiriz. O senaryonun üzerine @techpro yazariz.
     Scenarioların nerede ve nasıl çalışacağı, hangi raporu kullanacağı ile alakalı seçanekleri bu notasyonda
 belirtiriz
+
+ @CucumberOptions() notasyonu scenariolarin nerede ve nasil calisacagi, hangi raporu kullanacagi ile alakali secenekleri
+ bu notasyonda belirtiriz.
+
+ @CucumberOptions() notasyonu icerisine plugin parametresi ile yukaridaki gibi almak istedigimiz rapor cesidini secip ekleriz.
+
+ pretty --> konsolda calistirdigimiz scenario ile ilgili ayrintili bilgi verir.
  */

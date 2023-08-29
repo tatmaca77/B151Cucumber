@@ -67,4 +67,9 @@ public class GoogleStepDefinition {
 
         }
     }
+
+    @And("kullanici cerezi kabul eder")
+    public void kullaniciCereziKabulEder() {
+        googlePage.cerez.click();
+    }
 }
