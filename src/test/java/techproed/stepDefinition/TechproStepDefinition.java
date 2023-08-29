@@ -62,12 +62,22 @@ public class TechproStepDefinition {
     }
 
     @Given("kullanici {string} url sayfasina gider")
-    public void kullaniciSayfasinaGider(String url) {   // File feature'dan gelen https://trchpro.com gelmis olacak.
+    public void kullaniciSayfasinaGider2(String url) {   // File feature'dan gelen https://trchpro.com gelmis olacak.
         Driver.getDriver().get(url);
     }
 
     @Then("arama kutusunda {string} aratir")
     public void aramaKutusundaAratir(String arananUrun) {
         techproPageage.searchBox.sendKeys(arananUrun);   // feature File'dan ne gelirse onu aratacak
+    }
+
+    @Given("kullanici {string} sayfasina gider")
+    public void kullaniciSayfasinaGider3(String url) {
+        Driver.getDriver().get(url);
+    }
+
+    @And("sayfa basliginin {string} icerdigini test eder")
+    public void sayfaBasligininIcerdiginiTestEder(String baslik) {
+        Assert.assertTrue(Driver.getDriver().getTitle().contains(baslik));
     }
 }

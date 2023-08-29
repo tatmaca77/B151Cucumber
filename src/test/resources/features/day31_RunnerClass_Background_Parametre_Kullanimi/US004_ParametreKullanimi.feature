@@ -12,7 +12,7 @@ Feature: US004 TechProEducation Arama Testi
   Scenario: TC01 Sayfada Arama Yapar
     Then arama kutusunda "mobile" aratir
     When cikan dropdown da mobile developer linkine tiklar
-    And sayfa basliginin Mobile icerdigini test eder
+    And sayfa basliginin "Mobile" icerdigini test eder
 
   Scenario: TC02 Sayfada Arama Yapar
     Then arama kutusunda "qa" aratir
