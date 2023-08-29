@@ -32,3 +32,7 @@ Feature: US004 TechProEducation Arama Testi
 
   Scenario: TC06 Sayfada Arama Yapar
     Given kullanici "https://yahoo.com" sayfasina gider
+    
+  Scenario: TC07 Techpro sayfasina gidilir Java aratilir
+    Given kullanici "https://techproeducation.com" sayfasina gider
+    Then arama kutusunda "java" aratir
