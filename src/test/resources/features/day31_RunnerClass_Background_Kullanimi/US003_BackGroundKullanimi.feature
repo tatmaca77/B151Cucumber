@@ -29,5 +29,8 @@ Feature: US003 TechProEducation Sayfasi Testi
   #Scenario'larimizin tek bir browser da calismasini istersek ve tüm scenario'lardan sonra browser'i kapatmak istersek
   #en son scenario'da close yapabiliriz.
 
+  #Eger scenario'larimiz tek bir browser'da calismasini istersek yani her scenario'da kapanmasin istersek sadece en son scenario'da
+  #sayfayi kapat step'ini kullaniriz.
+
 
   #Github - Settings -Applications - Authorized OAuth Apps - Cucumber Reports  --> GitHubda raporu görünütlemek icin adimlar.
