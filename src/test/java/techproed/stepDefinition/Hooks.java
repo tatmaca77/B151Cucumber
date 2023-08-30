@@ -27,6 +27,21 @@ public class Hooks {
         System.out.println("Scenariolar calismaya basladi.");
     }
 
+    @Before("@arac2")
+    public void setUp2() {
+        System.out.println("Google'da Ford aratildi");
+    }
+
+    @Before("@arac3")
+    public void setUp3() {
+        System.out.println("Google'da Audi aratildi");
+    }
+
+    /**
+       Scenario'dan önce calismasini istedigimiz @Before methodunun notasyonuna parametre olarak scenario'ya tanimladigimiz
+       tag'i belirtebiliriz. Dolayisiyla sadece parametre olarak belirttigimiz @Before methodu Scenario'dan önce calisacaktir.
+     */
+
     @After
     public void tearDown(Scenario scenario) throws Exception {
         if (scenario.isFailed()) { // -> Scenario fail olursa

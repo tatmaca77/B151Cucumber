@@ -15,7 +15,7 @@ sayesinde çalıştırabiliriz. Ve plugin parametresi ile raporlar alabiliriz
                            "junit:target/xml-report/cucumber.xml"},
         features = "src/test/resources/features", // Features altindaki klasörlere ulasmasi icin Content Root ile yolu alinir.
         glue = {"techproed/stepDefinition","techproed/hooks"},
-        tags = "@arac1",    // Burda SQL'deki gibi and or ayrimini biliyoruz. and dersen olmaz or olur.
+        tags = "@arac2",    // Burda SQL'deki gibi and or ayrimini biliyoruz. and dersen olmaz or olur.
         dryRun = false, // --> true seçersek scenarioları kontrol eder, browser'ı çalıştırmaz
         monochrome = false   // tek renk olarak konsolda gösterir. Kullanimi zorunlu degildir. False yaparsan renkli olur.
 )
