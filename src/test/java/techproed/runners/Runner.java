@@ -12,10 +12,11 @@ sayesinde çalıştırabiliriz. Ve plugin parametresi ile raporlar alabiliriz
 @CucumberOptions(plugin = {"pretty",  // pretty kullaniminda konsolda detayli olarak tüm adimlari rapor halinde görürüz.
                            "html:target/default-cucumber-reports.html",
                            "json:target/json-reports/cucumber.json", // bu 3 cesit rapor verir. json junit dev icin ilki tester icin. Target altinda raporlar.
-                           "junit:target/xml-report/cucumber.xml"},
+                           "junit:target/xml-report/cucumber.xml",
+                           "rerun:TestOutput/failed_scenario.txt"}, // rerun ile belirttigimiz dosyada fail olan senaryolar tutulur.
         features = "src/test/resources/features", // Features altindaki klasörlere ulasmasi icin Content Root ile yolu alinir.
         glue = {"techproed/stepDefinition","techproed/hooks"},
-        tags = "@arac2",    // Burda SQL'deki gibi and or ayrimini biliyoruz. and dersen olmaz or olur.
+        tags = "@arc",    // Burda SQL'deki gibi and or ayrimini biliyoruz. and dersen olmaz or olur.
         dryRun = false, // --> true seçersek scenarioları kontrol eder, browser'ı çalıştırmaz
         monochrome = false   // tek renk olarak konsolda gösterir. Kullanimi zorunlu degildir. False yaparsan renkli olur.
 )
