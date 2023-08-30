@@ -25,3 +25,15 @@ için kullanırız. @CucumberOptions() parametresi içine belirttiğimiz feature
 fail olan scenarioları tutan txt dosyasının yolunu belirtiriz. Dosya yolu belirttiğimiz için
 önüne @ işareti koymamız gerekir
  */
+
+/**
+   Burda ben ilk önce day35 altindaki US001 senaryolarini calistirdim. Öncelikle 1.ve3. senaryolarda bilerek hata aldim.
+   2.Senaryo Passed oldu. Sonucunda bir tane TestOutput dosyasi altinda .txt dosyasi olustu ve icinde failed olan
+   senaryolarin satirlari gözüktü. 2. senaryo basarili olarak gectigi icin onunla ilgili hic birsey yazmaz.
+   Sonraki asamalarda FailedRunner Class'indan tags parametresini sildik. ve features yolunu TestOutput dosyasinin
+   yolunu basinda @ isareti ile yazdik. US001 üzerinde önce senaryo 1'i düzelttik ve calistirdik. Bu sefer sadece
+   failed olan 1 ve 3 calisti. 1.senaryodan Pass aldik.
+   Sonrasinda .txt dosyasi icinde kontrol edince 1.senaryonunda silindigini gördük. Sonra 3. senaryoyu da düzelttik ve
+   calistirdik ve PASS aldik. En son olarak .txt dosyasi icerisini kontrol ettigimizde icerisinin bombos oldugunu gördük
+   cünkü hic bir sekilde failed olan bir senaryo yoktu. !!!!!
+ */
