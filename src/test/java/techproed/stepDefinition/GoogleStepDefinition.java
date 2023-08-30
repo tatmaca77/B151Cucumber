@@ -30,10 +30,12 @@ public class GoogleStepDefinition {
     }
 
 
-    @Then("kullanici google arama kutusunda {string} aratir")
+    /*@Then("kullanici google arama kutusunda {string} aratir")
     public void kullaniciGoogleAramaKutusundaAratir2(String arac) {
         googlePage.aramaKutusu.sendKeys(ConfigReader.getProperty(arac), Keys.ENTER);
     }
+
+     */
 
 
 
