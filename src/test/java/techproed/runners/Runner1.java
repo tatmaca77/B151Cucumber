@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(plugin = {"pretty",
         "html:target/default-cucumber-reports.html",
-        "json:target/json-reports/cucumber.json",
+        "json:target/json-reports/cucumber.json2",
         "junit:target/xml-report/cucumber.xml",
         "rerun:TestOutput/failed_scenario.txt"},
         // rerun ile belirttigimiz dosyada fail olan senaryolar tutulur.

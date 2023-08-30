@@ -11,7 +11,7 @@ sayesinde çalıştırabiliriz. Ve plugin parametresi ile raporlar alabiliriz
 @RunWith(Cucumber.class)//-->Test çalıştırıcı Notasyon - Cucumber'i Junit ile calistiran Annotation'dir. Ikisi arasindaki Entegrasyonu saglar.
 @CucumberOptions(plugin = {"pretty",  // pretty kullaniminda konsolda detayli olarak tüm adimlari rapor halinde görürüz.
                            "html:target/default-cucumber-reports.html",
-                           "json:target/json-reports/cucumber.json", // bu 3 cesit rapor verir. json junit dev icin ilki tester icin. Target altinda raporlar.
+                           "json:target/json-reports/cucumber.json1", // bu 3 cesit rapor verir. json junit dev icin ilki tester icin. Target altinda raporlar.
                            "junit:target/xml-report/cucumber.xml",
                            "rerun:TestOutput/failed_scenario.txt"}, // rerun ile belirttigimiz dosyada fail olan senaryolar tutulur.
         features = "src/test/resources/features", // Features altindaki klasörlere ulasmasi icin Content Root ile yolu alinir.
