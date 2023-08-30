@@ -9,7 +9,7 @@ import org.openqa.selenium.TakesScreenshot;
 import techproed.utilities.Driver;
 
 
-public class Hooks {
+public class HooksStepDefinition {
     /**
          Hooks class'in kullanim amaci scenariolardan önce ya da sonra calismasini istedigimiz kodlari belirttigimiz class'tir.
        Bunu @Before ve @After notasyonlarina sahip methodlar ile yapariz.
