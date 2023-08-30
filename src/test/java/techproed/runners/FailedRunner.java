@@ -27,7 +27,8 @@ fail olan scenarioları tutan txt dosyasının yolunu belirtiriz. Dosya yolu bel
  */
 
 /**
-   Burda ben ilk önce day35 altindaki US001 senaryolarini calistirdim. Öncelikle 1.ve3. senaryolarda bilerek hata aldim.
+   Burda ben ilk önce day35 altindaki US001 senaryolarini calistirdim RunnerClass icerisinde tag'ini belirterek.
+   Öncelikle 1.ve3. senaryolarda bilerek hata aldim.
    2.Senaryo Passed oldu. Sonucunda bir tane TestOutput dosyasi altinda .txt dosyasi olustu ve icinde failed olan
    senaryolarin satirlari gözüktü. 2. senaryo basarili olarak gectigi icin onunla ilgili hic birsey yazmaz.
    Sonraki asamalarda FailedRunner Class'indan tags parametresini sildik. ve features yolunu TestOutput dosyasinin
